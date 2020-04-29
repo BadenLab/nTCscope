@@ -38,12 +38,12 @@ $EndComp
 $Comp
 L Device:R_Small R1
 U 1 1 5E591D42
-P 4150 3100
-F 0 "R1" H 4209 3146 50  0000 L CNN
-F 1 "330" H 4209 3055 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 4150 3100 50  0001 C CNN
-F 3 "~" H 4150 3100 50  0001 C CNN
-	1    4150 3100
+P 4150 3700
+F 0 "R1" H 4209 3746 50  0000 L CNN
+F 1 "330" H 4209 3655 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 4150 3700 50  0001 C CNN
+F 3 "~" H 4150 3700 50  0001 C CNN
+	1    4150 3700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -181,8 +181,6 @@ Wire Wire Line
 Wire Wire Line
 	4150 2550 4300 2550
 Wire Wire Line
-	4150 3200 4150 4100
-Wire Wire Line
 	4150 4100 4200 4100
 Wire Wire Line
 	4200 4100 4200 4200
@@ -293,4 +291,19 @@ F 3 "" H 5100 4150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5100 4050 5100 4150
+Wire Wire Line
+	4150 3800 4150 4100
+$Comp
+L Diode:1N53xxB D1
+U 1 1 5EA995FC
+P 4150 3150
+F 0 "D1" V 4196 3071 50  0000 R CNN
+F 1 "1N53xxB" V 4105 3071 50  0000 R CNN
+F 2 "Diode_THT:D_DO-201_P15.24mm_Horizontal" H 4150 2975 50  0001 C CNN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/1n5345b.pdf" H 4150 3150 50  0001 C CNN
+	1    4150 3150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4150 3300 4150 3600
 $EndSCHEMATC

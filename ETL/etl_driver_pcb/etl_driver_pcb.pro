@@ -1,4 +1,4 @@
-update=Fri 28 Feb 2020 13:20:56 GMT
+update=Wed 29 Apr 2020 13:06:11 BST
 version=1
 last_client=kicad
 [general]
@@ -25,7 +25,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=etl_driver_as_arduino_due_shield.net
+LastNetListRead=etl_driver_pcb.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
@@ -233,7 +233,7 @@ Enabled=1
 [pcbnew/Layer.F.Fab]
 Enabled=1
 [pcbnew/Layer.Rescue]
-Enabled=1
+Enabled=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/Default]
 Name=Default

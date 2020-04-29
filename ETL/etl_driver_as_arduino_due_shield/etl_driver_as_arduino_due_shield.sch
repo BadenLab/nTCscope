@@ -38,24 +38,13 @@ $EndComp
 $Comp
 L Device:R_Small R1
 U 1 1 5E591D42
-P 4150 3100
-F 0 "R1" H 4209 3146 50  0000 L CNN
-F 1 "330" H 4209 3055 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 4150 3100 50  0001 C CNN
-F 3 "~" H 4150 3100 50  0001 C CNN
-	1    4150 3100
+P 4150 3950
+F 0 "R1" H 4209 3996 50  0000 L CNN
+F 1 "330" H 4209 3905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 4150 3950 50  0001 C CNN
+F 3 "~" H 4150 3950 50  0001 C CNN
+	1    4150 3950
 	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x02_Female J1
-U 1 1 5E5922EA
-P 4500 2550
-F 0 "J1" H 4392 2225 50  0000 C CNN
-F 1 "from Arduino" H 4392 2316 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4500 2550 50  0001 C CNN
-F 3 "~" H 4500 2550 50  0001 C CNN
-	1    4500 2550
-	1    0    0    1   
 $EndComp
 $Comp
 L Device:R_Small R2
@@ -91,23 +80,12 @@ F 3 "~" H 7250 5150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x02_Female J2
-U 1 1 5E592F50
-P 6500 2950
-F 0 "J2" H 6528 2926 50  0000 L CNN
-F 1 "12V power" H 6528 2835 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6500 2950 50  0001 C CNN
-F 3 "~" H 6500 2950 50  0001 C CNN
-	1    6500 2950
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:Conn_01x02_Female J3
 U 1 1 5E59330F
 P 8000 4300
 F 0 "J3" H 8028 4276 50  0000 L CNN
 F 1 "to_ETL" H 8028 4185 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8000 4300 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 8000 4300 50  0001 C CNN
 F 3 "~" H 8000 4300 50  0001 C CNN
 	1    8000 4300
 	1    0    0    -1  
@@ -146,8 +124,6 @@ F 3 "" H 6100 3100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6100 3100 6100 3050
-Wire Wire Line
-	6100 3050 6300 3050
 $Comp
 L power:+12V #PWR03
 U 1 1 5E59BDD0
@@ -161,27 +137,6 @@ F 3 "" H 6100 2800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6100 2800 6100 2950
-Wire Wire Line
-	6100 2950 6300 2950
-$Comp
-L power:GND #PWR01
-U 1 1 5E59CE04
-P 4050 2450
-F 0 "#PWR01" H 4050 2200 50  0001 C CNN
-F 1 "GND" H 4055 2277 50  0000 C CNN
-F 2 "" H 4050 2450 50  0001 C CNN
-F 3 "" H 4050 2450 50  0001 C CNN
-	1    4050 2450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4050 2450 4300 2450
-Wire Wire Line
-	4150 3000 4150 2550
-Wire Wire Line
-	4150 2550 4300 2550
-Wire Wire Line
-	4150 3200 4150 4100
 Wire Wire Line
 	4150 4100 4200 4100
 Wire Wire Line
@@ -268,18 +223,14 @@ Wire Wire Line
 $Comp
 L power:GND #PWR07
 U 1 1 5E5B4DEB
-P 3850 4600
-F 0 "#PWR07" H 3850 4350 50  0001 C CNN
-F 1 "GND" H 3855 4427 50  0000 C CNN
-F 2 "" H 3850 4600 50  0001 C CNN
-F 3 "" H 3850 4600 50  0001 C CNN
-	1    3850 4600
+P 4200 4550
+F 0 "#PWR07" H 4200 4300 50  0001 C CNN
+F 1 "GND" H 4205 4377 50  0000 C CNN
+F 2 "" H 4200 4550 50  0001 C CNN
+F 3 "" H 4200 4550 50  0001 C CNN
+	1    4200 4550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4200 4500 3850 4500
-Wire Wire Line
-	3850 4500 3850 4600
 $Comp
 L power:GND #PWR0101
 U 1 1 5E5B623F
@@ -293,4 +244,164 @@ F 3 "" H 5100 4150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5100 4050 5100 4150
+Wire Wire Line
+	4150 4050 4150 4100
+$Comp
+L Diode:1N53xxB D1
+U 1 1 5EA9F29E
+P 4150 3550
+F 0 "D1" V 4196 3471 50  0000 R CNN
+F 1 "1N53xxB" V 4105 3471 50  0000 R CNN
+F 2 "Diode_THT:D_DO-201_P15.24mm_Horizontal" H 4150 3375 50  0001 C CNN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/1n5345b.pdf" H 4150 3550 50  0001 C CNN
+	1    4150 3550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4150 3700 4150 3850
+$Comp
+L Arduino:Arduino_Due_Shield XA1
+U 1 1 5EA98003
+P 4000 6250
+F 0 "XA1" V 3947 3923 60  0000 R CNN
+F 1 "Arduino_Due_Shield" V 4053 3923 60  0000 R CNN
+F 2 "Arduino:Arduino_Due_Shield" H 4700 9000 60  0001 C CNN
+F 3 "https://store.arduino.cc/arduino-due" H 4700 9000 60  0001 C CNN
+	1    4000 6250
+	0    1    1    0   
+$EndComp
+NoConn ~ 6150 4950
+NoConn ~ 6050 4950
+NoConn ~ 5950 4950
+NoConn ~ 5850 4950
+NoConn ~ 5750 4950
+NoConn ~ 5650 4950
+NoConn ~ 5550 4950
+NoConn ~ 5450 4950
+NoConn ~ 5350 4950
+NoConn ~ 5250 4950
+NoConn ~ 5150 4950
+NoConn ~ 5050 4950
+NoConn ~ 4950 4950
+NoConn ~ 4850 4950
+NoConn ~ 4450 4950
+NoConn ~ 4350 4950
+NoConn ~ 4250 4950
+NoConn ~ 4150 4950
+NoConn ~ 4050 4950
+NoConn ~ 3950 4950
+NoConn ~ 3850 4950
+NoConn ~ 3750 4950
+NoConn ~ 3650 4950
+NoConn ~ 3550 4950
+NoConn ~ 3450 4950
+NoConn ~ 3350 4950
+NoConn ~ 3250 4950
+NoConn ~ 3050 4950
+NoConn ~ 2950 4950
+NoConn ~ 2350 4950
+NoConn ~ 2450 4950
+NoConn ~ 2550 4950
+NoConn ~ 2650 4950
+NoConn ~ 2250 4950
+NoConn ~ 2150 4950
+NoConn ~ 2050 4950
+NoConn ~ 1950 4950
+NoConn ~ 1850 7550
+NoConn ~ 1950 7550
+NoConn ~ 2050 7550
+NoConn ~ 2150 7550
+NoConn ~ 2250 7550
+NoConn ~ 2350 7550
+NoConn ~ 2450 7550
+NoConn ~ 2550 7550
+NoConn ~ 2650 7550
+NoConn ~ 2750 7550
+NoConn ~ 2850 7550
+NoConn ~ 2950 7550
+NoConn ~ 3050 7550
+NoConn ~ 3150 7550
+NoConn ~ 3250 7550
+NoConn ~ 3350 7550
+NoConn ~ 3450 7550
+NoConn ~ 3550 7550
+NoConn ~ 3650 7550
+NoConn ~ 3750 7550
+NoConn ~ 3850 7550
+NoConn ~ 3950 7550
+NoConn ~ 4050 7550
+NoConn ~ 4150 7550
+NoConn ~ 4250 7550
+NoConn ~ 4350 7550
+NoConn ~ 4450 7550
+NoConn ~ 4550 7550
+NoConn ~ 4650 7550
+NoConn ~ 4750 7550
+NoConn ~ 4850 7550
+NoConn ~ 4950 7550
+NoConn ~ 5050 7550
+NoConn ~ 6600 6500
+NoConn ~ 6600 6400
+NoConn ~ 6600 6300
+NoConn ~ 6600 6200
+NoConn ~ 6600 6100
+NoConn ~ 6600 6000
+NoConn ~ 5150 7550
+NoConn ~ 5250 7550
+NoConn ~ 5350 7550
+NoConn ~ 5450 7550
+NoConn ~ 5550 7550
+NoConn ~ 5650 7550
+NoConn ~ 5750 7550
+NoConn ~ 5850 7550
+NoConn ~ 5950 7550
+NoConn ~ 6050 7550
+NoConn ~ 6150 7550
+Wire Wire Line
+	4150 3000 3500 3000
+Wire Wire Line
+	3500 3000 3500 4850
+Wire Wire Line
+	3500 4850 4650 4850
+Wire Wire Line
+	4650 4850 4650 4950
+Wire Wire Line
+	4150 3000 4150 3400
+NoConn ~ 4550 4950
+Wire Wire Line
+	4200 4500 4200 4550
+$Comp
+L power:GND #PWR0102
+U 1 1 5EAE79C5
+P 2750 4850
+F 0 "#PWR0102" H 2750 4600 50  0001 C CNN
+F 1 "GND" H 2755 4677 50  0000 C CNN
+F 2 "" H 2750 4850 50  0001 C CNN
+F 3 "" H 2750 4850 50  0001 C CNN
+	1    2750 4850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2750 4850 2750 4950
+NoConn ~ 1850 4950
+$Comp
+L Connector:Barrel_Jack_MountingPin J2
+U 1 1 5EAFD06E
+P 7250 3050
+F 0 "J2" H 7020 3014 50  0000 R CNN
+F 1 "12V power" H 7020 2923 50  0000 R CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 7300 3010 50  0001 C CNN
+F 3 "~" H 7300 3010 50  0001 C CNN
+	1    7250 3050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 2950 6950 2950
+Wire Wire Line
+	6950 3150 6750 3150
+Wire Wire Line
+	6750 3150 6750 3050
+Wire Wire Line
+	6100 3050 6750 3050
+NoConn ~ 7250 3350
 $EndSCHEMATC
