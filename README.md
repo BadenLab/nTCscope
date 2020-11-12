@@ -1,6 +1,6 @@
 ﻿
 <p align="right"><img src="https://github.com/BadenLab/Zebrafish-visual-space-model/blob/master/Images/Logo.png" width="300"/>
-<h1 align="center">DBO-Scope</h1></p>
+<h1 align="center">nTC(DBO)-Scope</h1></p>
 <h4 align="center">An open source and ultra-low-cost design for large 3D field of view 2-photon microscopy</h4>
 <p align="center"><h6 align="right">by F.K.Janiak and colleagues, University of Sussex, UK </h6></p>
 
