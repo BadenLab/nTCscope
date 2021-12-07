@@ -6,13 +6,11 @@
 
 This project is licensed under the [GNU General Public License v3.0]
 
-Divergent excitation two photon microscopy for 3D random access mesoscale imaging at single cell resolution
+Non-Telecentric 2P two-photon microscopy for 3D random access mesoscale imaging 
 
 FK Janiak, P Bartel, R Bale, T Yoshimatsu, E Komulainen, M Zhou, K Staras, LL Prieto-Godino, T Euler, M Maravall, T Baden
 
-doi: https://doi.org/10.1101/821405 
 
-See the full paper at https://www.biorxiv.org/content/10.1101/821405v1.full
 
 
 
